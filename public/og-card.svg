@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="85%" cy="22%" r="65%"><stop stop-color="#536b38" stop-opacity=".48"/><stop offset="1" stop-color="#0a0c0b" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#e8efdc" stroke-opacity=".065"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0c0b"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".6"/>
+  <rect x="78" y="75" width="50" height="50" rx="12" fill="#111511" stroke="#d4f564" stroke-opacity=".55"/>
+  <text x="88" y="111" fill="#d4f564" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="-3">aa</text>
+  <text x="78" y="278" fill="#eeeee7" font-family="Arial,sans-serif" font-size="90" font-weight="500" letter-spacing="-7">Arnav Arya<tspan fill="#d4f564">.</tspan></text>
+  <text x="83" y="350" fill="#d4f564" font-family="Arial,sans-serif" font-size="24" letter-spacing="2">FULL STACK DEVELOPER · AI ENTHUSIAST</text>
+  <text x="83" y="421" fill="#a7afa1" font-family="Arial,sans-serif" font-size="22">Building thoughtful digital experiences, one idea at a time.</text>
+  <circle cx="951" cy="363" r="160" fill="none" stroke="#d4f564" stroke-opacity=".1"/>
+  <circle cx="951" cy="363" r="119" fill="none" stroke="#d4f564" stroke-opacity=".18" stroke-dasharray="2 8"/>
+  <circle cx="951" cy="363" r="78" fill="#1e2819" stroke="#d4f564" stroke-opacity=".45"/>
+  <text x="905" y="386" fill="#dce9be" font-family="Arial,sans-serif" font-size="54" letter-spacing="-8">AA</text>
+</svg>

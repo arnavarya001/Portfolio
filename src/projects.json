@@ -1,0 +1,1576 @@
+[
+  {
+    "sourceNumber": 1,
+    "title": "Complaint & Helpdesk Ticket System",
+    "tagline": "A clear workflow for raising, routing and resolving support tickets.",
+    "summary": "An individual MERN coursework project with customer and admin views for ticket intake, department assignment, discussions and resolution metrics.",
+    "overview": "Customers can submit categorized tickets, follow status changes and comment on an issue. Admin routes support triage, department assignment and dashboard summaries. The README identifies this as an individual Assignment 6 project.",
+    "problem": "Email and manual complaint logs make ownership, status and response timing difficult to track.",
+    "features": [
+      "Customer registration and login",
+      "Ticket create, search and status/priority filters",
+      "Open-ticket edit/delete and one-time reopen workflow",
+      "Admin status and department assignment",
+      "Ticket discussion threads",
+      "Dashboard counts and average resolution time"
+    ],
+    "technology": {
+      "frontend": "React 19, Vite, React Router 7, CSS",
+      "backend": "Node.js, Express 5 REST API, JWT, bcryptjs",
+      "database": "MongoDB with Mongoose",
+      "architecture": "Separate React client and Express API; User, Ticket, Comment and Department models."
+    },
+    "technologies": [
+      "React",
+      "Vite",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcryptjs"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database"
+    ],
+    "difficulty": "Advanced",
+    "scoreBreakdown": {
+      "architecture": 10,
+      "backend": 11,
+      "data": 8,
+      "features": 13,
+      "security": 2,
+      "ui": 7,
+      "usefulness": 9,
+      "validation": 4,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "The public registration controller accepts a role from the request body, and the user schema permits admin; role escalation needs to be fixed before real use.",
+      "The live deployment reached login, but the supplied demo login remained on its loading state, so the protected dashboards were not verified."
+    ],
+    "verification": "Repository tree, README, manifests and core auth/ticket/model files inspected. Live login page opened; dashboard access unverified.",
+    "repoUrl": "https://github.com/arnavarya001/Complaint-Helpdesk-Ticket-System",
+    "liveUrl": "https://complaint-helpdesk-ticket-system.vercel.app/admin/dashboard",
+    "preview": {
+      "brand": "HELPDESK / SUPPORT",
+      "headline": "Ticket overview",
+      "rows": [
+        "Account access \u00b7 Open",
+        "Billing question \u00b7 In progress",
+        "Technical issue \u00b7 Resolved"
+      ],
+      "chips": [
+        "Queue",
+        "Departments",
+        "SLA"
+      ],
+      "image": "/projects/helpdesk.jpg",
+      "imageLabel": "Repository-provided thumbnail artwork"
+    }
+  },
+  {
+    "sourceNumber": 2,
+    "title": "Mocktail Menu",
+    "tagline": "A lightweight browser for alcohol-free drink recipes.",
+    "summary": "A React app that fetches non-alcoholic drinks from TheCocktailDB and opens ingredient and preparation details by drink ID.",
+    "overview": "React Router separates the home, drinks list and recipe detail views. The list filters fetched drink names in the browser; the detail view requests one recipe and renders its ingredients and instructions.",
+    "problem": "People looking for alcohol-free drink ideas need a simple way to browse recipes and ingredient lists.",
+    "features": [
+      "Non-alcoholic drink listing from TheCocktailDB",
+      "Client-side name search",
+      "Recipe details by API ID",
+      "Ingredient, measure and instruction display",
+      "React Router navigation and not-found route"
+    ],
+    "technology": {
+      "frontend": "React 19, Vite, React Router 7",
+      "backend": "None; browser calls TheCocktailDB directly",
+      "database": "None",
+      "architecture": "Single-page client with list and detail requests to TheCocktailDB."
+    },
+    "technologies": [
+      "React",
+      "Vite",
+      "React Router",
+      "TheCocktailDB API",
+      "JavaScript"
+    ],
+    "categories": [
+      "Frontend",
+      "API Integration",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Beginner",
+    "scoreBreakdown": {
+      "architecture": 9,
+      "backend": 2,
+      "data": 0,
+      "features": 8,
+      "security": 5,
+      "ui": 7,
+      "usefulness": 7,
+      "validation": 2,
+      "deployment": 3,
+      "maintainability": 2
+    },
+    "reviewNotes": [
+      "The list and detail requests have loading UI, but source code has no explicit network/error state handling."
+    ],
+    "verification": "Repository tree, README, package manifest and all route components inspected. Live home page opened; API-backed list flow not verified in this audit.",
+    "repoUrl": "https://github.com/arnavarya001/ps8-mocktail-menu",
+    "liveUrl": "https://ps8-mocktail-menu.vercel.app/",
+    "preview": {
+      "brand": "MOCKTAIL MENU",
+      "headline": "Find a new pour",
+      "rows": [
+        "Browse alcohol-free drinks",
+        "Search by drink name",
+        "Open recipe details"
+      ],
+      "chips": [
+        "Ingredients",
+        "Measures",
+        "Instructions"
+      ],
+      "image": "/projects/mocktail-menu.svg",
+      "imageLabel": "Interactive recipe pad & drinks explorer"
+    }
+  },
+  {
+    "sourceNumber": 3,
+    "title": "Vehicle Management System",
+    "tagline": "A fleet register with role-gated vehicle maintenance.",
+    "summary": "A team-built MERN system for recording vehicles, searching fleet records and tracking insurance dates and operational status.",
+    "overview": "The React client talks to an Express API backed by MongoDB/Mongoose. The README lists team Neural Nexus and Arnav as a member; it does not assign an individual feature ownership.",
+    "problem": "Fleet operators need one place to find vehicle records and spot maintenance or insurance follow-ups.",
+    "features": [
+      "Vehicle create, edit and delete routes restricted to admins",
+      "Search by vehicle number, model or owner",
+      "Type and status filters",
+      "Insurance expiry and operational status fields",
+      "JWT authentication and bcrypt password hashing",
+      "Fleet, login, registration and vehicle forms"
+    ],
+    "technology": {
+      "frontend": "React 19, Vite, React Router 7",
+      "backend": "Node.js, Express 5, JWT, bcryptjs",
+      "database": "MongoDB with Mongoose",
+      "architecture": "Separate client/API; User and Vehicle models with protected admin write routes."
+    },
+    "technologies": [
+      "React",
+      "Vite",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcryptjs"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 10,
+      "backend": 11,
+      "data": 7,
+      "features": 11,
+      "security": 5,
+      "ui": 6,
+      "usefulness": 8,
+      "validation": 3,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "Vehicle list/detail GET routes are public in the inspected router and return records that include owner and insurance fields; review exposure before using real fleet data.",
+      "The live page rendered its filters but remained on 'Loading vehicles\u2026' during the check."
+    ],
+    "verification": "Repository tree, README, manifests, vehicle model/controller, auth middleware and routes inspected. Live page opened; API data load not confirmed. README identifies this as a team project.",
+    "repoUrl": "https://github.com/arnavarya001/fullstack-backend-frontend",
+    "liveUrl": "https://fullstack-backend-frontend.vercel.app/",
+    "preview": {
+      "brand": "FLEET / VEHICLES",
+      "headline": "Vehicle register",
+      "rows": [
+        "Search plate, model or owner",
+        "Filter by type",
+        "Review insurance dates"
+      ],
+      "chips": [
+        "Fleet",
+        "Status",
+        "Insurance"
+      ],
+      "image": "/projects/vehicle-management.svg",
+      "imageLabel": "Fleet telemetry & vehicle register"
+    }
+  },
+  {
+    "sourceNumber": 4,
+    "title": "QuickQR",
+    "tagline": "A customizable QR generator that works entirely in the browser.",
+    "summary": "A static JavaScript utility that validates web links, draws QR codes and exports image/vector files without a backend.",
+    "overview": "The page uses a bundled QR library and client-side JavaScript for URL normalization, QR generation, color and error-correction controls, PNG/SVG exports, clipboard copying, theme preference and local recent history.",
+    "problem": "People need a quick, printable QR code that points to a clean web URL and can match a chosen brand palette.",
+    "features": [
+      "URL validation and protocol normalization",
+      "Live QR generation",
+      "Foreground/background colors and error-correction settings",
+      "PNG and SVG downloads",
+      "Clipboard copy",
+      "Local history and persistent theme preference"
+    ],
+    "technology": {
+      "frontend": "HTML5, CSS and vanilla JavaScript",
+      "backend": "None",
+      "database": "None; recent links/theme use localStorage",
+      "architecture": "Static page with bundled qrcode library and browser Clipboard/Canvas APIs."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "QRCode library",
+      "Clipboard API",
+      "Canvas",
+      "Local Storage"
+    ],
+    "categories": [
+      "Frontend",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 8,
+      "backend": 1,
+      "data": 0,
+      "features": 10,
+      "security": 7,
+      "ui": 8,
+      "usefulness": 8,
+      "validation": 4,
+      "deployment": 3,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "No server or account layer is present; browser permission and clipboard behavior can vary by browser."
+    ],
+    "verification": "Repository tree, README, package manifest and generator source inspected. Live generator page opened; generated exports were not downloaded.",
+    "repoUrl": "https://github.com/arnavarya001/QuickQR",
+    "liveUrl": "https://quickqr-inky.vercel.app/",
+    "preview": {
+      "brand": "QUICKQR",
+      "headline": "Link \u2192 scannable code",
+      "rows": [
+        "Validate a destination URL",
+        "Tune contrast and error correction",
+        "Export PNG or SVG"
+      ],
+      "chips": [
+        "PNG",
+        "SVG",
+        "History"
+      ],
+      "image": "/projects/quickqr.svg",
+      "imageLabel": "Vector QR Code Studio"
+    }
+  },
+  {
+    "sourceNumber": 5,
+    "title": "Cloudgram",
+    "tagline": "A cloud-drive interface backed by Telegram storage and MongoDB metadata.",
+    "summary": "A server-rendered file manager that authenticates Telegram users, organizes folders and streams file content through Telegram infrastructure.",
+    "overview": "The Express/EJS application stores user and folder metadata in MongoDB while routing file bytes through Telegram Bot API or a GramJS MTProto provider. Auth verification, authenticated file routes, ownership checks and temporary upload cleanup are present in source.",
+    "problem": "A personal cloud-drive experience can be built without keeping uploaded files permanently on the application server.",
+    "features": [
+      "Telegram Login Widget HMAC verification and replay-age check",
+      "Nested folders and per-user file metadata",
+      "Multi-file uploads and cleanup of temporary files",
+      "Bot API and MTProto storage providers",
+      "File listing, search, stats and streamed downloads/previews",
+      "MongoDB-backed sessions"
+    ],
+    "technology": {
+      "frontend": "EJS, HTML, CSS and vanilla JavaScript",
+      "backend": "Node.js, Express 5, Telegram Bot API, GramJS/MTProto, Multer",
+      "database": "MongoDB/Mongoose metadata and connect-mongo sessions",
+      "architecture": "Storage service selects Telegram transport while Mongo stores ownership, folders and Telegram references."
+    },
+    "technologies": [
+      "Node.js",
+      "Express",
+      "EJS",
+      "MongoDB",
+      "Mongoose",
+      "Telegram Bot API",
+      "GramJS",
+      "Multer",
+      "Sessions"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database",
+      "API Integration"
+    ],
+    "difficulty": "Advanced",
+    "scoreBreakdown": {
+      "architecture": 12,
+      "backend": 13,
+      "data": 8,
+      "features": 13,
+      "security": 6,
+      "ui": 8,
+      "usefulness": 9,
+      "validation": 3,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "The design has substantial external-service and credential/configuration dependencies; the live public page opened, but Telegram sign-in and file transfer were not exercised."
+    ],
+    "verification": "Repository tree, README, dependencies, auth, file routes, storage providers and models inspected. Live landing page opened; authenticated flows unverified.",
+    "repoUrl": "https://github.com/arnavarya001/Cloudgram",
+    "liveUrl": "https://cloudgram-gamma.vercel.app/",
+    "preview": {
+      "brand": "TELEGRAM CLOUD",
+      "headline": "Your files, organized",
+      "rows": [
+        "Folder hierarchy",
+        "Telegram-backed storage",
+        "Streamed preview and download"
+      ],
+      "chips": [
+        "Files",
+        "Folders",
+        "Storage"
+      ],
+      "image": "/projects/cloudgram.svg",
+      "imageLabel": "MTProto Cloud Storage Explorer"
+    }
+  },
+  {
+    "sourceNumber": 6,
+    "title": "Lab Equipment Issue & Return Tracker",
+    "tagline": "A role-based inventory workflow for borrowing, issuing and returning lab assets.",
+    "summary": "An institutional asset-management app with separate requester, lab-in-charge and admin workflows, stock guards and return-condition records.",
+    "overview": "Express routes and Mongoose models track equipment quantities and request states from pending through approved, issued and returned. Session authentication protects role-specific routes; overdue items are calculated against expected return dates, and asset records include maintenance logs.",
+    "problem": "Paper checkout logs make equipment availability, overdue returns and asset condition hard to reconcile.",
+    "features": [
+      "Role-based session login for requester, lab in-charge and admin",
+      "Asset catalog and admin CRUD",
+      "Requests with purpose, quantity and due date",
+      "Approve/reject, issue and return transitions",
+      "Stock availability checks and overdue flags",
+      "OK/damaged/lost return condition and maintenance logs"
+    ],
+    "technology": {
+      "frontend": "EJS templates, HTML, CSS and vanilla JavaScript",
+      "backend": "Node.js, Express 4, sessions, bcryptjs",
+      "database": "MongoDB Atlas with Mongoose; Mongo-backed sessions",
+      "architecture": "Server-rendered application with role-protected route groups and Asset/Request/User models."
+    },
+    "technologies": [
+      "Node.js",
+      "Express",
+      "EJS",
+      "MongoDB",
+      "Mongoose",
+      "Sessions",
+      "bcryptjs"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database"
+    ],
+    "difficulty": "Advanced",
+    "scoreBreakdown": {
+      "architecture": 11,
+      "backend": 12,
+      "data": 8,
+      "features": 13,
+      "security": 7,
+      "ui": 7,
+      "usefulness": 9,
+      "validation": 4,
+      "deployment": 2,
+      "maintainability": 4
+    },
+    "reviewNotes": [
+      "Workflow and stock transitions are implemented in route code; concurrent issue requests are not guarded with a transaction in the inspected paths.",
+      "The live deployment opened the login page; authenticated role dashboards were not tested."
+    ],
+    "verification": "Repository tree, README feature matrix, dependencies, models and role-protected admin/requester/lab-in-charge routes inspected. Live login page opened.",
+    "repoUrl": "https://github.com/arnavarya001/Lab-Equipment-Asset-Issue-Return-Tracking-System",
+    "liveUrl": "https://lab-equipment-asset-issue-return-tr.vercel.app/",
+    "preview": {
+      "brand": "LABTRACK / ASSETS",
+      "headline": "Equipment checkout",
+      "rows": [
+        "Available stock",
+        "Pending approvals",
+        "Due date and return condition"
+      ],
+      "chips": [
+        "Requester",
+        "Lab in-charge",
+        "Admin"
+      ],
+      "image": "/projects/lab-equipment.svg",
+      "imageLabel": "Hardware lab asset checkout ledger"
+    }
+  },
+  {
+    "sourceNumber": 7,
+    "title": "Parking Management & Slot Booking",
+    "tagline": "Time-based parking reservations with an admin operations view.",
+    "summary": "A React and Express application for browsing parking slots, checking time overlap, managing zones and reviewing bookings.",
+    "overview": "The backend stores users, zones, slots and bookings in MongoDB. Booking creation checks valid time order, blocked slots and overlapping active reservations; users can view/cancel their own bookings and admins can inspect all reservations.",
+    "problem": "Facilities need to coordinate slot availability across vehicle types, zones and reservation times.",
+    "features": [
+      "JWT login and admin role guard",
+      "Slot and zone CRUD",
+      "Vehicle type/location filters",
+      "Start/end-time bookings with overlap lookup",
+      "My bookings and cancellation",
+      "Admin booking and occupancy views"
+    ],
+    "technology": {
+      "frontend": "React 19, Vite, React Router 7, CSS",
+      "backend": "Node.js, Express 5, JWT, bcryptjs",
+      "database": "MongoDB with Mongoose",
+      "architecture": "React client, Express API and User/Zone/ParkingSlot/Booking collections."
+    },
+    "technologies": [
+      "React",
+      "Vite",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcryptjs"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database"
+    ],
+    "difficulty": "Advanced",
+    "scoreBreakdown": {
+      "architecture": 10,
+      "backend": 11,
+      "data": 8,
+      "features": 12,
+      "security": 5,
+      "ui": 7,
+      "usefulness": 9,
+      "validation": 4,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "The overlap check is a read followed by insert; concurrent requests can race without a transaction or database-level conflict guard.",
+      "The live deep link redirected to login, so booking behavior was not exercised."
+    ],
+    "verification": "Repository tree, README, manifests, Booking/Slot models, auth middleware and booking routes inspected. Live site redirected to its login screen.",
+    "repoUrl": "https://github.com/arnavarya001/Parking-Management-Slot-Booking-System",
+    "liveUrl": "https://parking-management-slot-booking-sys.vercel.app/slots",
+    "preview": {
+      "brand": "SMART PARKING",
+      "headline": "Choose a space and time",
+      "rows": [
+        "Zone and vehicle filters",
+        "Reservation window",
+        "Active booking history"
+      ],
+      "chips": [
+        "Slots",
+        "Zones",
+        "Bookings"
+      ],
+      "image": "/projects/smart-parking.svg",
+      "imageLabel": "Interactive parking lot grid"
+    }
+  },
+  {
+    "sourceNumber": 8,
+    "title": "BookMyShow Clone",
+    "tagline": "A cinema booking flow from show selection to a digital ticket.",
+    "summary": "An Express/MongoDB application with movie, theatre, show, seat, snack, booking, review and watchlist workflows.",
+    "overview": "The MVC app uses EJS pages and Mongoose models for catalog and booking data. Its booking controller checks already-booked seats, calculates ticket/snack fees, creates a Razorpay order when keys are configured and verifies payment signatures; a mock checkout path also exists.",
+    "problem": "Moviegoers need one guided flow to compare screenings, choose seats and keep their booking details.",
+    "features": [
+      "Movie catalog and filters",
+      "Theatre/showtime selection",
+      "Seat matrix with price tiers",
+      "Snack add-ons and total calculation",
+      "Razorpay order/signature code plus demo checkout",
+      "Digital QR ticket, history and cancellation",
+      "Reviews, watchlist and local Passport authentication"
+    ],
+    "technology": {
+      "frontend": "EJS, ejs-mate, CSS, Bootstrap, browser JavaScript, Leaflet",
+      "backend": "Node.js, Express 5, Passport Local, sessions, Razorpay SDK, Cloudinary/Multer",
+      "database": "MongoDB/Mongoose with Mongo-backed session storage",
+      "architecture": "MVC monolith with Movie, Theatre, Show, Booking, Review and User models."
+    },
+    "technologies": [
+      "Node.js",
+      "Express",
+      "EJS",
+      "MongoDB",
+      "Mongoose",
+      "Passport.js",
+      "Razorpay",
+      "Leaflet",
+      "Cloudinary",
+      "Sessions"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database",
+      "API Integration"
+    ],
+    "difficulty": "Advanced",
+    "scoreBreakdown": {
+      "architecture": 12,
+      "backend": 14,
+      "data": 9,
+      "features": 14,
+      "security": 6,
+      "ui": 9,
+      "usefulness": 9,
+      "validation": 4,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "Payment provider code is present, but actual payment processing was not verified. The controller includes a mock order/demo mode, so a finished checkout alone must not be presented as a real payment.",
+      "Seat availability is checked before booking; atomic reservation behavior under concurrent requests was not verified."
+    ],
+    "verification": "Repository tree, README, dependencies, booking/show models, payment controller, routes and seat-selection source inspected. Live movie catalog loaded; checkout was not attempted.",
+    "repoUrl": "https://github.com/arnavarya001/bookmyshow",
+    "liveUrl": "https://bookmyshow-psi-woad.vercel.app/movies",
+    "preview": {
+      "brand": "CINEMA / BOOKINGS",
+      "headline": "Choose your screening",
+      "rows": [
+        "Movie and theatre",
+        "Showtime and seat layout",
+        "Digital ticket"
+      ],
+      "chips": [
+        "Showtimes",
+        "Seats",
+        "QR ticket"
+      ],
+      "image": "/projects/bookmyshow.svg",
+      "imageLabel": "Cinema theater booking & barcode ticket"
+    }
+  },
+  {
+    "sourceNumber": 9,
+    "title": "The Guidance \u00b7 BSEB Learning Hub",
+    "tagline": "A Bihar Board learning portal presented in Hindi and English.",
+    "summary": "The live site presents navigation for syllabus, notes, video lessons, test series, previous papers, daily quizzes and an AI tutor.",
+    "overview": "The homepage opened and exposed a BSEB coaching/board-preparation interface. The listed GitHub repository returned 404, so its framework, APIs, authentication, data model and the behavior behind these links could not be audited.",
+    "problem": "Students preparing for Bihar Board exams need a single place to reach study material and practice tools.",
+    "features": [
+      "Observed on the live homepage: syllabus, notes, videos, test series, PYQ papers, daily quiz, AI Guru, login and registration links",
+      "Feature internals and data provenance not verified"
+    ],
+    "technology": {
+      "frontend": "Not verified; repository unavailable",
+      "backend": "Not verified",
+      "database": "Not verified",
+      "architecture": "Live UI only; no source-code architecture could be confirmed."
+    },
+    "technologies": [
+      "Not verified"
+    ],
+    "categories": [
+      "Frontend"
+    ],
+    "difficulty": "Unverified",
+    "scoreBreakdown": {
+      "architecture": 0,
+      "backend": 0,
+      "data": 0,
+      "features": 8,
+      "security": 0,
+      "ui": 8,
+      "usefulness": 9,
+      "validation": 2,
+      "deployment": 4,
+      "maintainability": 0
+    },
+    "reviewNotes": [
+      "Score and tier are provisional and deliberately limited to the visible homepage; no source claims are being inferred from project naming or marketing copy."
+    ],
+    "verification": "Live site opened and visible navigation reviewed. GitHub URL returned 404; repository and deeper behavior require verification.",
+    "repoUrl": "https://github.com/arnavarya001/the_guidance",
+    "liveUrl": "https://the-guidance.vercel.app/#home",
+    "provisional": true,
+    "preview": {
+      "brand": "THE GUIDANCE / BSEB",
+      "headline": "Prepare, practice, review",
+      "rows": [
+        "Syllabus and notes",
+        "Video and test series",
+        "PYQ papers and daily quiz"
+      ],
+      "chips": [
+        "Hindi",
+        "Study",
+        "Practice"
+      ],
+      "image": "/projects/bseb-guidance.svg",
+      "imageLabel": "Bihar Board learning hub & model papers"
+    }
+  },
+  {
+    "sourceNumber": 10,
+    "title": "YojanaSetu \u00b7 Sahay Setu",
+    "tagline": "An explainable scheme-guidance concept for the NSFDC ecosystem.",
+    "summary": "A React/TypeScript project combining deterministic scheme checks, EMI calculations, partner routing and an optional AI assistant with cited policy snippets.",
+    "overview": "The source contains an eligibility engine, recommendation/scoring logic, calculator, Leaflet partner routing, multilingual UI and OpenAI tool loop with an offline deterministic fallback. Its current Storage class initializes seeded arrays in process memory, and the README's \u20b93 lakh eligibility description conflicts with \u20b95 lakh statements in the RAG prompt/data.",
+    "problem": "Beneficiaries can have trouble finding relevant schemes, understanding preliminary criteria and locating an official channel partner.",
+    "features": [
+      "Deterministic eligibility criteria with missing-field explanations",
+      "Scheme match scores and recommendations",
+      "EMI calculator with repayment schedule",
+      "Geospatial channel-partner routing",
+      "Hindi/English UI and Web Speech API hooks",
+      "Optional OpenAI tool agent with local fallback and curated RAG chunks",
+      "Admin routes and in-memory audit/version records"
+    ],
+    "technology": {
+      "frontend": "React, TypeScript, Vite, Tailwind, React Router, i18next, React Leaflet, Web Speech API",
+      "backend": "Node.js, Express, TypeScript, Zod, OpenAI SDK, JWT, Helmet, rate limiter",
+      "database": "Current Storage class uses seeded in-memory arrays; no durable database adapter was confirmed in the inspected storage module",
+      "architecture": "Shared TypeScript types, REST API, deterministic domain services and optional LLM/tool orchestration."
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Express",
+      "OpenAI API",
+      "RAG",
+      "Leaflet",
+      "i18next",
+      "Web Speech API"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "AI / ML",
+      "API Integration"
+    ],
+    "difficulty": "Advanced",
+    "scoreBreakdown": {
+      "architecture": 11,
+      "backend": 10,
+      "data": 1,
+      "features": 14,
+      "security": 4,
+      "ui": 8,
+      "usefulness": 10,
+      "validation": 4,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "The README and eligibility comments cite a \u20b93 lakh ceiling while the AI system prompt and RAG data say \u20b95 lakh. This policy mismatch should be resolved before presenting recommendations as reliable.",
+      "The data store inspected is in-memory, so scheme edits, audit records and conversations are not durable across restarts.",
+      "No SIH award claim is made; the README associates the work with problem statement 26092."
+    ],
+    "verification": "Repository tree, README, manifests, core eligibility/recommendation/AI/RAG/storage modules and tests directory inspected. Live Render URL showed its waking service screen; app response not verified.",
+    "repoUrl": "https://github.com/arnavarya001/SIH-Problem",
+    "liveUrl": "https://yojanasetu-nsfdc.onrender.com/",
+    "preview": {
+      "brand": "YOJANASETU / SAHAY SETU",
+      "headline": "A clearer route to support",
+      "rows": [
+        "Profile and eligibility criteria",
+        "Explainable scheme matches",
+        "Calculator and partner map"
+      ],
+      "chips": [
+        "Rules",
+        "AI assist",
+        "Sources"
+      ],
+      "image": "/projects/yojanasetu.svg",
+      "imageLabel": "Government schemes eligibility AI navigator"
+    }
+  },
+  {
+    "sourceNumber": 11,
+    "title": "SpendSmart",
+    "tagline": "A per-user expense ledger built on Firebase Authentication and Firestore.",
+    "summary": "A static JavaScript app for recording income and expenses, with Firebase sign-in and Firestore rules scoped to the authenticated user.",
+    "overview": "The client initializes Firebase Auth and Firestore, then handles transaction add/edit/delete and category/type filtering. Firestore rules compare transaction userId against the signed-in UID. The live page showed its auth view; a successful backend session was not verified.",
+    "problem": "Personal transactions need a simple ledger that persists across sessions and separates each user's records.",
+    "features": [
+      "Email/password sign-in and account creation",
+      "Firestore transaction collection",
+      "Income/expense and category fields",
+      "Add/update/delete operations",
+      "Per-user read/write/delete rule checks",
+      "Dashboard and category summaries in the UI"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS, vanilla JavaScript and Firebase Web SDK",
+      "backend": "Firebase Authentication and Firestore client services",
+      "database": "Cloud Firestore with userId-scoped security rules",
+      "architecture": "Static browser app calling Firebase directly; no custom server."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Firebase Auth",
+      "Cloud Firestore",
+      "Firestore Security Rules"
+    ],
+    "categories": [
+      "Frontend",
+      "Backend",
+      "Database",
+      "API Integration"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 9,
+      "backend": 5,
+      "data": 7,
+      "features": 10,
+      "security": 8,
+      "ui": 7,
+      "usefulness": 8,
+      "validation": 3,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "The live deployment presented its login/configuration view; successful Firebase sign-in and transaction persistence were not confirmed."
+    ],
+    "verification": "Repository tree, README, app source and Firestore rules inspected. Live auth view opened; data workflows unverified.",
+    "repoUrl": "https://github.com/arnavarya001/-SpendSmart-Firebase-Smart-Expense-Tracker",
+    "liveUrl": "https://arnavarya001.github.io/-SpendSmart-Firebase-Smart-Expense-Tracker/",
+    "preview": {
+      "brand": "SPENDSMART",
+      "headline": "Transactions at a glance",
+      "rows": [
+        "Income and expense entries",
+        "Category totals",
+        "User-scoped records"
+      ],
+      "chips": [
+        "Firebase Auth",
+        "Firestore",
+        "Ledger"
+      ],
+      "image": "/projects/spendsmart.svg",
+      "imageLabel": "Monthly spending trends & transactions"
+    }
+  },
+  {
+    "sourceNumber": 12,
+    "title": "StudyFlow",
+    "tagline": "A student task planner with Supabase Auth and PostgreSQL row policies.",
+    "summary": "A static JavaScript task manager with per-user RLS, task CRUD, completion, priorities, due dates, subject tags, search and sorting.",
+    "overview": "The SQL schema enables RLS on tasks and defines select/insert/update/delete policies using auth.uid() = user_id. The browser app calls Supabase Auth and queries the user's task data; the live deployment opened at an auth view with a project setup notice, so connected persistence was not confirmed.",
+    "problem": "Students need a lightweight way to organize assignments by due date, subject and priority.",
+    "features": [
+      "Email/password auth",
+      "Task add/edit/delete/complete",
+      "Priority, due date and subject tags",
+      "Search, sorting and dashboard statistics",
+      "PostgreSQL checks for priority/status",
+      "RLS policies scoped to authenticated user_id"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS, vanilla JavaScript and Supabase JS client",
+      "backend": "Supabase Auth and PostgREST services",
+      "database": "PostgreSQL via Supabase, with RLS policies and indexes",
+      "architecture": "Static client directly accesses a user-scoped tasks table through Supabase."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Supabase Auth",
+      "PostgreSQL",
+      "Row Level Security"
+    ],
+    "categories": [
+      "Frontend",
+      "Backend",
+      "Database",
+      "API Integration",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 10,
+      "backend": 7,
+      "data": 9,
+      "features": 11,
+      "security": 9,
+      "ui": 7,
+      "usefulness": 8,
+      "validation": 4,
+      "deployment": 2,
+      "maintainability": 4
+    },
+    "reviewNotes": [
+      "Schema and RLS are strong for a small client app. Live sign-in and database connectivity were not verified."
+    ],
+    "verification": "Repository tree, README, browser app source and SQL schema/RLS policies inspected. Live auth view opened; connected data flow unverified.",
+    "repoUrl": "https://github.com/arnavarya001/StudyFlow-supabase-student-task-manager-",
+    "liveUrl": "https://arnavarya001.github.io/StudyFlow-supabase-student-task-manager-/",
+    "preview": {
+      "brand": "STUDYFLOW",
+      "headline": "Make room for focused work",
+      "rows": [
+        "Pending and completed tasks",
+        "Subject and priority tags",
+        "Due dates and search"
+      ],
+      "chips": [
+        "Tasks",
+        "Subjects",
+        "Schedule"
+      ],
+      "image": "/projects/studyflow.svg",
+      "imageLabel": "Pomodoro focus timer & sprint board"
+    }
+  },
+  {
+    "sourceNumber": 13,
+    "title": "Weather Station",
+    "tagline": "A one-page current-conditions lookup by city.",
+    "summary": "A vanilla JavaScript client requests current weather from OpenWeatherMap and displays temperature, condition, wind and humidity.",
+    "overview": "The page has a city input and search form, loading/error cards and a temperature gauge. The source calls the current-weather endpoint; no forecast path or server is present.",
+    "problem": "Users want a quick current-weather snapshot for a named city.",
+    "features": [
+      "City search",
+      "Current temperature and condition",
+      "Wind and humidity",
+      "Empty-input message",
+      "Not-found and fetch-error states"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS and vanilla JavaScript",
+      "backend": "None; direct OpenWeatherMap request",
+      "database": "None",
+      "architecture": "Static browser page calls the current-weather endpoint and renders a result card."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "OpenWeatherMap API",
+      "Fetch API"
+    ],
+    "categories": [
+      "Frontend",
+      "API Integration",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Beginner",
+    "scoreBreakdown": {
+      "architecture": 5,
+      "backend": 2,
+      "data": 0,
+      "features": 5,
+      "security": 2,
+      "ui": 6,
+      "usefulness": 6,
+      "validation": 2,
+      "deployment": 3,
+      "maintainability": 2
+    },
+    "reviewNotes": [
+      "Only current conditions are implemented. The API credential is embedded in browser JavaScript; restrict or rotate it and avoid publishing an unrestricted key.",
+      "The live search form loaded; a weather result was not requested during this audit."
+    ],
+    "verification": "Repository tree, HTML and weather.js inspected. Live search page opened; API result not tested.",
+    "repoUrl": "https://github.com/arnavarya001/weather",
+    "liveUrl": "https://weather2134rds.netlify.app/",
+    "preview": {
+      "brand": "WEATHER STATION",
+      "headline": "Current conditions",
+      "rows": [
+        "City lookup",
+        "Temperature and condition",
+        "Wind and humidity"
+      ],
+      "chips": [
+        "Today",
+        "Search",
+        "Weather"
+      ],
+      "image": "/projects/weather-station.svg",
+      "imageLabel": "Real-time atmospheric Doppler radar"
+    }
+  },
+  {
+    "sourceNumber": 14,
+    "title": "GitHub Profile Explorer",
+    "tagline": "A terminal-inspired browser for public GitHub profiles and repositories.",
+    "summary": "A single-file frontend app that fetches a GitHub user and up to six non-fork repositories, then sorts those repositories by stars.",
+    "overview": "The inline JavaScript calls the public GitHub REST user and repositories endpoints, displays profile counts and join date, and renders the selected repositories. Unauthenticated requests are subject to GitHub's public rate limit.",
+    "problem": "A quick profile view can make public developer activity easier to scan without visiting several GitHub pages.",
+    "features": [
+      "Username lookup",
+      "Public profile information",
+      "Repository list from GitHub REST API",
+      "Non-fork top repositories sorted by stars",
+      "Not-found and API error handling",
+      "Rate-limit notice in the UI"
+    ],
+    "technology": {
+      "frontend": "Single HTML page with inline CSS and JavaScript",
+      "backend": "None; direct GitHub REST API calls",
+      "database": "None",
+      "architecture": "Browser fetches public user/repository endpoints and renders results client-side."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GitHub REST API",
+      "Fetch API"
+    ],
+    "categories": [
+      "Frontend",
+      "API Integration",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 8,
+      "backend": 5,
+      "data": 0,
+      "features": 8,
+      "security": 6,
+      "ui": 8,
+      "usefulness": 7,
+      "validation": 3,
+      "deployment": 3,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "Direct unauthenticated API usage is limited by GitHub's per-IP rate cap; no caching or backend token layer is present.",
+      "Live terminal-style page loaded; no profile lookup was submitted."
+    ],
+    "verification": "Repository tree and full HTML/inline script inspected. Live page shell opened; API lookup not run.",
+    "repoUrl": "https://github.com/arnavarya001/github-profile-explorer",
+    "liveUrl": "https://github-profile-viewer2235.netlify.app/",
+    "preview": {
+      "brand": "GIT LOG / PROFILE",
+      "headline": "Inspect a public profile",
+      "rows": [
+        "User stats and join date",
+        "Top repositories by stars",
+        "GitHub REST endpoints"
+      ],
+      "chips": [
+        "Profile",
+        "Repos",
+        "Public API"
+      ],
+      "image": "/projects/github-explorer.svg",
+      "imageLabel": "Developer profile analytics & commit heatmap"
+    }
+  },
+  {
+    "sourceNumber": 15,
+    "title": "Calculator with Dark Mode",
+    "tagline": "A basic arithmetic keypad with a manual theme toggle.",
+    "summary": "A small HTML/CSS/JavaScript calculator that appends keypad input, evaluates it on demand and toggles a dark body class.",
+    "overview": "The script uses eval for the expression and catches syntax errors. Clear works, but percent and memory buttons are appended as text rather than implementing distinct calculator semantics; theme state is not persisted.",
+    "problem": "A small browser calculator is useful for quick arithmetic and demonstrates event handling.",
+    "features": [
+      "Digit and arithmetic button input",
+      "Clear and equals",
+      "Error display for invalid expressions",
+      "Dark/light body-class toggle"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS and vanilla JavaScript",
+      "backend": "None",
+      "database": "None",
+      "architecture": "Static keypad page with client-side expression string and theme class toggle."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "categories": [
+      "Frontend",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Beginner",
+    "scoreBreakdown": {
+      "architecture": 3,
+      "backend": 0,
+      "data": 0,
+      "features": 4,
+      "security": 3,
+      "ui": 6,
+      "usefulness": 3,
+      "validation": 1,
+      "deployment": 3,
+      "maintainability": 2
+    },
+    "reviewNotes": [
+      "eval() is used on the expression string; avoid accepting arbitrary text if the input becomes user-editable. Percent and memory controls do not have separate logic."
+    ],
+    "verification": "Repository tree, index.html and script.js inspected. Live calculator page opened; arithmetic interaction not submitted.",
+    "repoUrl": "https://github.com/arnavarya001/calculator-with-dark-mode",
+    "liveUrl": "https://dashing-cobbler-b9b8b2.netlify.app/",
+    "preview": {
+      "brand": "CALCULATOR",
+      "headline": "A small arithmetic pad",
+      "rows": [
+        "Digits and operators",
+        "Clear and equals",
+        "Theme toggle"
+      ],
+      "chips": [
+        "Arithmetic",
+        "Keyboard",
+        "Theme"
+      ],
+      "image": "/projects/calculator.svg",
+      "imageLabel": "Scientific calculator & calculation tape"
+    }
+  },
+  {
+    "sourceNumber": 16,
+    "title": "Truck Driver Playlist Radio",
+    "tagline": "A Hindi truck-themed player wrapped around a YouTube playlist.",
+    "summary": "A static player UI uses the YouTube IFrame API for playlist controls and includes a separate optional Express audio-proxy server.",
+    "overview": "The client exposes play/pause, next/previous, shuffle and seek controls around a configured playlist. The repository's optional @distube/ytdl-core proxy is not part of the static Netlify client and the README warns it is fragile and outside YouTube's terms.",
+    "problem": "A themed radio-player interface gives long-haul drivers a playlist-oriented listening surface.",
+    "features": [
+      "YouTube playlist player integration",
+      "Play/pause, next/previous and shuffle controls",
+      "Seek/progress UI",
+      "Truck horn button and rotating background references",
+      "Optional Express audio proxy in a separate server folder"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS, vanilla JavaScript and YouTube IFrame API",
+      "backend": "Optional Node.js/Express proxy using @distube/ytdl-core",
+      "database": "None",
+      "architecture": "Static client embeds YouTube; optional proxy streams audio separately and is not verified in deployment."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "YouTube IFrame API",
+      "Node.js",
+      "Express",
+      "ytdl-core"
+    ],
+    "categories": [
+      "Frontend",
+      "Backend",
+      "API Integration",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 5,
+      "backend": 4,
+      "data": 0,
+      "features": 8,
+      "security": 4,
+      "ui": 8,
+      "usefulness": 5,
+      "validation": 2,
+      "deployment": 3,
+      "maintainability": 2
+    },
+    "reviewNotes": [
+      "Live player UI loaded but showed 0:00 playback time; audio playback was not tested. The unofficial audio proxy is a fragile dependency and README flags the terms issue."
+    ],
+    "verification": "Repository tree, README, player source and optional server source inspected. Live player page opened; playback not verified.",
+    "repoUrl": "https://github.com/arnavarya001/Truck-Driver-Playlist-Music-player",
+    "liveUrl": "https://calm-salmiakki-331c2a.netlify.app/",
+    "preview": {
+      "brand": "HORN OK PLEASE RADIO",
+      "headline": "Playlist on the highway",
+      "rows": [
+        "YouTube playlist",
+        "Playback and seek controls",
+        "Horn and truck theme"
+      ],
+      "chips": [
+        "Play",
+        "Next",
+        "Shuffle"
+      ],
+      "image": "/projects/truck-radio.svg",
+      "imageLabel": "Highway Dhaba FM 98.3 MHz stereo radio"
+    }
+  },
+  {
+    "sourceNumber": 17,
+    "title": "Zyntra",
+    "tagline": "A profile-discovery and messaging app built around shared aesthetics.",
+    "summary": "A React/TypeScript frontend and Express API implement registration, protected discovery, profile management, requests, matches and messaging.",
+    "overview": "The source contains protected React routes, JWT-backed auth context, image upload handling, database initialization for PostgreSQL in production and a local SQLite fallback, plus API handlers for users and messages. The README is still the default Vite template; the live landing page identifies the product as an Instagram-aesthetic matching app.",
+    "problem": "People looking for new connections want a way to discover profiles with compatible interests and continue conversations.",
+    "features": [
+      "Registration/login and protected client routes",
+      "Profile details and image uploads",
+      "Preference-based profile discovery",
+      "Requests and mutual matches",
+      "Messages and profile views",
+      "PostgreSQL/SQLite database setup in the backend"
+    ],
+    "technology": {
+      "frontend": "React, TypeScript, Vite, React Router",
+      "backend": "Node.js, Express, JWT, bcryptjs, Multer",
+      "database": "PostgreSQL in production; SQLite fallback is described in source",
+      "architecture": "SPA plus REST API and SQL tables for users, requests, matches and messages."
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "SQLite",
+      "JWT",
+      "bcryptjs",
+      "Multer"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database",
+      "API Integration"
+    ],
+    "difficulty": "Advanced",
+    "scoreBreakdown": {
+      "architecture": 10,
+      "backend": 10,
+      "data": 7,
+      "features": 11,
+      "security": 3,
+      "ui": 8,
+      "usefulness": 6,
+      "validation": 3,
+      "deployment": 2,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "The backend uses a hard-coded fallback JWT secret and permissive CORS in the inspected server entry; configure secrets and origins explicitly before real-user deployment.",
+      "Live landing page loaded. Protected discovery, messaging and persistence were not exercised."
+    ],
+    "verification": "Repository tree, package manifest, auth context, discovery/messages/requests pages and backend server inspected. README is a Vite template. Live landing page opened.",
+    "repoUrl": "https://github.com/arnavarya001/Zyntra",
+    "liveUrl": "https://zyntra-ruby.vercel.app/",
+    "preview": {
+      "brand": "ZYNTRA",
+      "headline": "Discover people with matching vibes",
+      "rows": [
+        "Profile and preferences",
+        "Discovery and requests",
+        "Matches and messages"
+      ],
+      "chips": [
+        "Profiles",
+        "Matches",
+        "Chat"
+      ],
+      "image": "/projects/zyntra.svg",
+      "imageLabel": "Social vibe matching & chat drawer"
+    }
+  },
+  {
+    "sourceNumber": 18,
+    "title": "Mobile Store Inventory",
+    "tagline": "A server-rendered catalog for recording and searching phone stock.",
+    "summary": "An EJS inventory app deployed through Netlify Functions with Netlify Database/PostgreSQL and Drizzle ORM.",
+    "overview": "The serverless route renders inventory and form pages, searches by brand and handles create/edit/update/delete actions. The table stores brand, model, RAM, storage and price. No authentication, customer cart, checkout or payment flow was found, so this is an inventory manager rather than a complete e-commerce app.",
+    "problem": "A small shop needs a basic record of phone models, specifications and prices.",
+    "features": [
+      "Inventory listing",
+      "Search by brand",
+      "Add and edit mobile records",
+      "Update and delete actions",
+      "PostgreSQL/Netlify Database schema with Drizzle",
+      "Server-rendered EJS forms and pages"
+    ],
+    "technology": {
+      "frontend": "EJS, HTML and CSS",
+      "backend": "Node.js, Express local adapter and Netlify Functions",
+      "database": "Netlify Database/PostgreSQL through Drizzle ORM",
+      "architecture": "Serverless handler routes to EJS views and a Drizzle-backed mobiles table."
+    },
+    "technologies": [
+      "Node.js",
+      "Express",
+      "Netlify Functions",
+      "EJS",
+      "PostgreSQL",
+      "Drizzle ORM"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 9,
+      "backend": 8,
+      "data": 8,
+      "features": 9,
+      "security": 2,
+      "ui": 7,
+      "usefulness": 6,
+      "validation": 3,
+      "deployment": 3,
+      "maintainability": 4
+    },
+    "reviewNotes": [
+      "Inventory routes have no authentication or authorization in the inspected handler; they should not be used for private stock data as-is.",
+      "Live home page opened; database-backed listing and mutations were not exercised."
+    ],
+    "verification": "Repository tree, package manifest, Netlify function, Drizzle schema and EJS pages inspected. Live home page opened.",
+    "repoUrl": "https://github.com/arnavarya001/Mobile_Shop",
+    "liveUrl": "https://bespoke-kataifi-f49f73.netlify.app/",
+    "preview": {
+      "brand": "MOBILE STORE",
+      "headline": "Inventory on the shelf",
+      "rows": [
+        "Brand and model",
+        "RAM and storage",
+        "Price and stock entry"
+      ],
+      "chips": [
+        "Browse",
+        "Search",
+        "Stock in"
+      ],
+      "image": "/projects/mobile-store.svg",
+      "imageLabel": "Phone catalog & stock manager"
+    }
+  },
+  {
+    "sourceNumber": 19,
+    "title": "ToDo List",
+    "tagline": "A small serverless task list with persistent database CRUD.",
+    "summary": "A static HTML/JavaScript interface calls Netlify Functions backed by PostgreSQL/Drizzle to list, create, complete and delete tasks.",
+    "overview": "The API validates UUIDs and task length, stores task status and timestamps, and returns the updated list after each operation. The UI renders Add, Complete and Delete; its visible Completed/Pending/Delete Completed buttons are not wired in the inspected browser script, and the API has no user identity or per-user isolation.",
+    "problem": "A simple task list should keep tasks between page loads and allow completion/deletion.",
+    "features": [
+      "List tasks",
+      "Create task with length validation",
+      "Toggle completion",
+      "Delete task",
+      "UUID primary keys and created timestamps",
+      "Serverless PostgreSQL/Drizzle persistence"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS, vanilla JavaScript and Axios",
+      "backend": "Netlify Functions with Express local development adapter",
+      "database": "Netlify Database/PostgreSQL through Drizzle ORM",
+      "architecture": "Static client calls REST-like function endpoints backed by a todos table."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Axios",
+      "Netlify Functions",
+      "PostgreSQL",
+      "Drizzle ORM"
+    ],
+    "categories": [
+      "Full Stack",
+      "Frontend",
+      "Backend",
+      "Database",
+      "Tools & Utilities"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 8,
+      "backend": 9,
+      "data": 8,
+      "features": 8,
+      "security": 2,
+      "ui": 4,
+      "usefulness": 6,
+      "validation": 3,
+      "deployment": 4,
+      "maintainability": 3
+    },
+    "reviewNotes": [
+      "Tasks are shared by the API rather than scoped to a signed-in user. The visible filter/delete-completed buttons are not connected to the script."
+    ],
+    "verification": "Repository tree, package manifest, Netlify function, database schema and frontend script inspected. Live task page opened; no task was created or changed.",
+    "repoUrl": "https://github.com/arnavarya001/ToDo_List",
+    "liveUrl": "https://fascinating-tulumba-d53697.netlify.app/",
+    "preview": {
+      "brand": "TASK MANAGER",
+      "headline": "A short list, kept in sync",
+      "rows": [
+        "Create a task",
+        "Mark complete or pending",
+        "Remove a task"
+      ],
+      "chips": [
+        "Tasks",
+        "Status",
+        "Postgres"
+      ],
+      "image": "/projects/todo-list.svg",
+      "imageLabel": "Daily engineering task checklist"
+    }
+  },
+  {
+    "sourceNumber": 20,
+    "title": "Snake Game",
+    "tagline": "A canvas-based snake game controlled by arrow keys.",
+    "summary": "A compact JavaScript game loop moves a grid-based snake, places food and stops on wall or self-collision.",
+    "overview": "The game uses Canvas 2D rendering, keyboard direction changes, food generation, an internal score and a speed increase every five points. Game over uses an alert and resets the state; the score is not shown in the page UI.",
+    "problem": "A browser game is a focused exercise in movement, collision checks and timed rendering.",
+    "features": [
+      "Canvas grid rendering",
+      "Arrow-key movement with reverse-turn prevention",
+      "Random food placement",
+      "Wall and self-collision detection",
+      "Internal score and speed-up",
+      "Start button and alert/reset on game over"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS, vanilla JavaScript and Canvas 2D",
+      "backend": "None",
+      "database": "None",
+      "architecture": "Single browser script owns game state and schedules movement with setTimeout."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Canvas"
+    ],
+    "categories": [
+      "Frontend",
+      "Games"
+    ],
+    "difficulty": "Beginner",
+    "scoreBreakdown": {
+      "architecture": 4,
+      "backend": 0,
+      "data": 0,
+      "features": 5,
+      "security": 5,
+      "ui": 5,
+      "usefulness": 4,
+      "validation": 2,
+      "deployment": 4,
+      "maintainability": 2
+    },
+    "reviewNotes": [
+      "There is no visible score display, touch input or separate restart treatment after game over; the start button can begin another run."
+    ],
+    "verification": "Repository tree and snake.js inspected. Live game start screen opened; gameplay was not started.",
+    "repoUrl": "https://github.com/arnavarya001/Snake-Game",
+    "liveUrl": "https://arnavarya001.github.io/Snake-Game/",
+    "preview": {
+      "brand": "SNAKE / CANVAS",
+      "headline": "Grow, turn, avoid the edge",
+      "rows": [
+        "Arrow-key movement",
+        "Food and growth",
+        "Collision ends the round"
+      ],
+      "chips": [
+        "Canvas",
+        "Grid",
+        "Game loop"
+      ],
+      "image": "/projects/snake-game.svg",
+      "imageLabel": "Retro CRT canvas arcade game"
+    }
+  },
+  {
+    "sourceNumber": 21,
+    "title": "DreamHomes Housing Website",
+    "tagline": "A static real-estate landing page with residence cards and contact content.",
+    "summary": "An HTML/CSS showcase for property listings; no backend, booking or payment flow is present in the repository.",
+    "overview": "The page contains a hero search field, residence cards, value section and contact details with static image assets. The associated main.js is empty, so search/filter behavior is not implemented in the inspected source.",
+    "problem": "A property landing page can present example homes and a contact route in one responsive layout.",
+    "features": [
+      "Home, residences, value and contact navigation",
+      "Static property cards and images",
+      "Search input/button visual only",
+      "Contact and call-to-action sections",
+      "Responsive CSS layout"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS, Google Fonts and Boxicons",
+      "backend": "None",
+      "database": "None",
+      "architecture": "Static marketing page; main.js is empty and there are no property APIs or booking routes."
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript (empty entry file)",
+      "Boxicons"
+    ],
+    "categories": [
+      "Frontend"
+    ],
+    "difficulty": "Beginner",
+    "scoreBreakdown": {
+      "architecture": 2,
+      "backend": 0,
+      "data": 0,
+      "features": 3,
+      "security": 5,
+      "ui": 5,
+      "usefulness": 4,
+      "validation": 1,
+      "deployment": 4,
+      "maintainability": 2
+    },
+    "reviewNotes": [
+      "Displayed market/customer/award counts and sample contact details are page copy, not verified service metrics. Search has no implementation in the source."
+    ],
+    "verification": "Repository tree, HTML, CSS and empty main.js inspected. Live landing page opened and rendered residence cards.",
+    "repoUrl": "https://github.com/arnavarya001/housing",
+    "liveUrl": "https://arnavarya001.github.io/housing/",
+    "preview": {
+      "brand": "DREAMHOMES",
+      "headline": "Discover your next address",
+      "rows": [
+        "Residence cards",
+        "Value section",
+        "Contact information"
+      ],
+      "chips": [
+        "Homes",
+        "Listings",
+        "Contact"
+      ],
+      "image": "/projects/dreamhomes.svg",
+      "imageLabel": "Luxury architectural estate portal"
+    }
+  },
+  {
+    "sourceNumber": 22,
+    "title": "RepoRead AI — Auto README Updater",
+    "tagline": "1-click Chrome extension popup that scans codebases and auto-commits polished READMEs.",
+    "summary": "A Manifest V3 browser extension built with React and Vite that inspects any active GitHub repository, generates comprehensive grounded documentation, and commits directly via the GitHub REST API.",
+    "overview": "RepoRead AI is a lightweight (~320px) Chrome extension popup that detects active GitHub repository tabs, scans repository trees and configuration manifests, detects the tech stack, synthesizes tailored documentation, and commits README.md directly to GitHub with auto-reloading.",
+    "problem": "Writing detailed, formatted repository documentation manually is tedious, causing many repositories to remain undocumented or outdated.",
+    "features": [
+      "Dynamic GitHub repository detection from active browser tabs",
+      "Multi-repo quick switcher for open GitHub tabs",
+      "Deep tech stack inspection (React, Node, Express, Vite, Drizzle, etc.)",
+      "Automated README generation grounded in real codebase files",
+      "Direct 1-click GitHub commit via GitHub REST API with auto tab reload",
+      "1-click pre-filled GitHub Personal Access Token setup flow",
+      "Secure client-side token storage in chrome.storage.local"
+    ],
+    "technology": {
+      "frontend": "React 18, Vite 6, Lucide React, React-Markdown, Remark-GFM",
+      "backend": "Chrome Extension Manifest V3, Service Worker background script",
+      "api": "GitHub REST API (v3 Octokit endpoints for trees, blobs, commits)",
+      "architecture": "Browser extension popup (~320px), chrome.tabs, chrome.storage API, modular services (generator, github, storage)."
+    },
+    "technologies": [
+      "React",
+      "Vite",
+      "Chrome Extension",
+      "Manifest V3",
+      "JavaScript",
+      "GitHub API",
+      "Lucide Icons",
+      "CSS3"
+    ],
+    "categories": [
+      "Tools & Utilities",
+      "Frontend",
+      "API Integration",
+      "AI / ML"
+    ],
+    "difficulty": "Intermediate",
+    "scoreBreakdown": {
+      "architecture": 11,
+      "backend": 9,
+      "data": 7,
+      "features": 12,
+      "security": 8,
+      "ui": 8,
+      "usefulness": 10,
+      "validation": 4,
+      "deployment": 4,
+      "maintainability": 4
+    },
+    "reviewNotes": [
+      "Clean Manifest V3 extension architecture with segregated services for GitHub API communication, storage, and README generation.",
+      "Uses client-side chrome.storage.local for credential security without external backend storage, and pre-fills token creation for smooth onboarding."
+    ],
+    "verification": "Repository source code inspected: Manifest V3 configuration, React popup architecture, GitHub API service, and direct commit workflows verified.",
+    "repoUrl": "https://github.com/arnavarya001/RepoRead-Ai-extension",
+    "liveUrl": "https://github.com/arnavarya001/RepoRead-Ai-extension/raw/main/reporead-ai-extension.zip",
+    "preview": {
+      "brand": "REPOREAD AI",
+      "headline": "1-Click Auto README Updater",
+      "rows": [
+        "Dynamic GitHub repo detection",
+        "Deep tech stack inspection",
+        "Direct 1-click commit & tab reload"
+      ],
+      "chips": [
+        "Manifest V3",
+        "Chrome Extension",
+        "GitHub API"
+      ],
+      "image": "/projects/reporead-ai.svg",
+      "imageLabel": "Chrome extension popup interface"
+    }
+  }
+]

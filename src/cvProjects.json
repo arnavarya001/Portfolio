@@ -1,0 +1,147 @@
+[
+  {
+    "isCvEntry": true,
+    "title": "YBS Contracts Pvt. Ltd. Portfolio Website",
+    "tagline": "Client website for a construction company",
+    "summary": "A freelance portfolio website for YBS Contracts Pvt. Ltd., described in the CV as an end-to-end build deployed on Netlify or Vercel.",
+    "overview": "The CV describes a client website for YBS Contracts Pvt. Ltd., built as freelance work with HTML, CSS and JavaScript and deployed on a hosting platform.",
+    "problem": "Present the construction company's services and work through a dedicated responsive website. The CV does not include a source repository or live URL for independent review.",
+    "features": [
+      "Client portfolio website for a construction company",
+      "Built with HTML, CSS and JavaScript",
+      "Freelance project described as an end-to-end delivery",
+      "Deployment on Netlify or Vercel is listed in the CV"
+    ],
+    "technology": {
+      "frontend": "HTML, CSS and JavaScript (CV-listed)",
+      "backend": "Not specified in the CV",
+      "database": "Not specified in the CV",
+      "delivery": "Netlify or Vercel deployment is listed; the live URL was not supplied"
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Netlify / Vercel"
+    ],
+    "difficulty": "CV-listed \u00b7 review pending",
+    "preview": {
+      "brand": "YBS CONTRACTS",
+      "headline": "Construction, delivered with care.",
+      "rows": [
+        "Company services and capabilities",
+        "Project portfolio",
+        "Client contact pathway"
+      ],
+      "chips": [
+        "Client website",
+        "Responsive UI",
+        "Freelance"
+      ],
+      "image": "/projects/ybs-contracts.svg",
+      "imageLabel": "Civil infrastructure portfolio"
+    },
+    "reviewNotes": [
+      "The supplied CV describes this as freelance work for YBS Contracts Pvt. Ltd.",
+      "Repository and live deployment URLs were not included, so implementation, authorship details and deployment could not be independently reviewed."
+    ],
+    "verification": "CV-listed project. Source code and a live URL were not supplied; the description and stack remain unverified."
+  },
+  {
+    "isCvEntry": true,
+    "title": "Expense Tracker Android App",
+    "tagline": "Track expenses, scan bills and split shared costs",
+    "summary": "An Android expense tracker described in the CV with Kotlin, bill scanning, SQLite storage and shared expense features.",
+    "overview": "The CV describes an Android app for tracking monthly expenses, entering bills through camera-based scanning, and splitting bills with shared balances.",
+    "problem": "Make everyday expense tracking and shared bill settlement easier. The CV lists Kotlin, Android SDK, OCR and SQLite; no repository or app listing was supplied for review.",
+    "features": [
+      "Monthly expense tracking",
+      "Camera-based bill entry and OCR scanning",
+      "Bill splitting with shared balances",
+      "SQLite storage on Android"
+    ],
+    "technology": {
+      "mobile": "Kotlin and Android SDK (CV-listed)",
+      "recognition": "OCR and bill scanning (CV-listed)",
+      "database": "SQLite (CV-listed)",
+      "architecture": "Android app; implementation details were not independently reviewed"
+    },
+    "technologies": [
+      "Kotlin",
+      "Android SDK",
+      "OCR",
+      "SQLite"
+    ],
+    "difficulty": "CV-listed \u00b7 review pending",
+    "preview": {
+      "brand": "EXPENSE TRACKER",
+      "headline": "Know where the month goes.",
+      "rows": [
+        "Monthly spending overview",
+        "Scan a bill with the camera",
+        "Settle shared balances"
+      ],
+      "chips": [
+        "Android",
+        "Bill scan",
+        "Shared costs"
+      ],
+      "image": "/projects/expense-tracker-android.svg",
+      "imageLabel": "Android Kotlin Jetpack Compose app"
+    },
+    "reviewNotes": [
+      "Features and technologies here come from the supplied CV.",
+      "Repository, demo and app-store links were not included, so the app and OCR flow could not be independently tested."
+    ],
+    "verification": "CV-listed project. Source code and a demo were not supplied; the feature and stack claims remain unverified."
+  },
+  {
+    "isCvEntry": true,
+    "title": "Student Management System",
+    "tagline": "Manage student records with a Node and MongoDB web app",
+    "summary": "A student CRUD application described in the CV with Express, Mongoose, EJS and MongoDB Atlas.",
+    "overview": "The CV describes a web-based student management system with create, read, update and delete operations, using MongoDB Atlas for hosted data.",
+    "problem": "Organize student information through a structured web interface and persistent database. The CV notes routing and project-structure fixes; no repository or live URL was supplied for review.",
+    "features": [
+      "Student record CRUD operations",
+      "MongoDB Atlas data storage",
+      "Server-rendered EJS interface",
+      "Routing and project-structure issues addressed"
+    ],
+    "technology": {
+      "frontend": "EJS templates (CV-listed)",
+      "backend": "Node.js and Express (CV-listed)",
+      "database": "MongoDB Atlas with Mongoose (CV-listed)",
+      "architecture": "Server-rendered CRUD web application (CV-described)"
+    },
+    "technologies": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "EJS"
+    ],
+    "difficulty": "CV-listed \u00b7 review pending",
+    "preview": {
+      "brand": "STUDENT RECORDS",
+      "headline": "Student data, in one place.",
+      "rows": [
+        "Browse student records",
+        "Add or update a profile",
+        "Manage Atlas-backed data"
+      ],
+      "chips": [
+        "CRUD",
+        "Express",
+        "MongoDB Atlas"
+      ],
+      "image": "/projects/student-records.svg",
+      "imageLabel": "University registrar MongoDB Atlas portal"
+    },
+    "reviewNotes": [
+      "The CV lists CRUD workflows, MongoDB Atlas and fixes to routing and project structure.",
+      "Repository and live demo URLs were not included, so the code, database integration and reported fixes could not be independently reviewed."
+    ],
+    "verification": "CV-listed project. Source code and a live URL were not supplied; the implementation and stack remain unverified."
+  }
+]
